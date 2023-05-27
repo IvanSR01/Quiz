@@ -1,0 +1,80 @@
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding: 20px 50px;
+	background-color: #fff;
+	box-shadow: 0 10px 40px #0000005f;
+	box-sizing: border-box;
+	border-radius: 20px;
+
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		color: #000000a0;
+		font-size: 40px;
+		font-weight: bold;
+		svg{
+			height: 40px;
+		}
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		button {
+			font-size: 25px;
+			font-weight: bold;
+			color: #00000099;
+			padding: 10px 20px;
+			cursor: pointer;
+			position: relative;
+			border: none;
+			background: none;
+			text-transform: uppercase;
+			transition: all 0.3s;
+			border-radius: 10px;
+		}
+
+		button:focus,
+		button:hover {
+			color: #0000005f;
+		}
+
+		button:focus:after,
+		button:hover:after {
+			width: 100%;
+			left: 0%;
+		}
+
+		button:after {
+			content: '';
+			pointer-events: none;
+			bottom: -2px;
+			left: 50%;
+			position: absolute;
+			width: 0%;
+			height: 2px;
+			background-color: rgb(28, 142, 142);
+			transition: all 0.3s;
+		}
+		.active:after {
+			width: 100%;
+			left: 0%;
+		}
+		
+	}
+	input{
+		width: 300px;
+		height: 20px;
+		padding: 10px 20px;
+		font-size: 25px;
+		outline: none;
+		color: rgb(28, 142, 142);
+		border: 2px solid  rgb(28, 142, 142);
+		border-radius: 4px;
+	}
+}
