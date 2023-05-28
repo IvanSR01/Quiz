@@ -1,4 +1,3 @@
-import Home from './pages/Home/Home'
 import './assets/global.scss'
 import Header from './components/Header/Header'
 import Router from './Router/Router'

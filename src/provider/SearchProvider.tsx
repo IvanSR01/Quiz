@@ -2,7 +2,7 @@ import React from 'react'
 
 interface ISearchConstex {
 	search: string;
-	setSearch?: (e) => string;
+	setSearch?: (value: string) => void;
 }
 
 const defultValue = {

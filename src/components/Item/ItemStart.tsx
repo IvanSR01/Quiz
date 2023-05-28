@@ -7,14 +7,14 @@ interface IItem {
 	title: string;
 	imgUrl: string;
 	i: number;
-	setClick?:() => void
+	setClick?:(num: number) => void
 }
 
 const ItemStart: React.FC<IItem> = ({ title, imgUrl, i, setClick}) => {
 	const { pathname } = useLocation()
 	const { id } = useParams()
 	const onClick = (num: number) => {
-		return  setClick ? setClick() : console.log(null)
+		return  setClick ? setClick(num) : console.log(null)
 	}
 	return (
 		<div className={styles.wrapper}>
