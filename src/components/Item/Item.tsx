@@ -7,9 +7,9 @@ import Button from '../Button/Button';
 
 type IMas = {
 	title: string;
-	imgUrl: string;
-	variants: string[];
-	correct: number;
+	imgUrl?: string;
+	variants?: string[];
+	correct?: number;
 }
 type IParams = {
 	id: string
@@ -20,7 +20,7 @@ const Item: React.FC = () => {
 	const [correctCount, setCorrectCount] = React.useState<number>(0)
 	const [imgFinish, setImgFinish] = React.useState<string>('')
 	const { id } = useParams<IParams>()
-	const item: IMas[] = data[id]
+	const item: IMas[] = data[Number(id)]
 	const i = 0;
 	const pagesCountMax: number = item.length
 	const pages: IMas = item[pagesCount]
@@ -47,12 +47,11 @@ const Item: React.FC = () => {
 		else {
 			setImgFinish('public/like-award-favorite-star-svgrepo-com.svg')
 		}
-		console.log(imgFinish)
 	}, [pagesCount, correctCount])
 	return (
 		<div className={styles.wrapperGame}>
 			{pagesCount === 0 ?
-				<ItemStart i={i} title={pages.title} imgUrl={pages.imgUrl} setClick={() => setPagesCount(1)} />
+				<ItemStart i={i} title={pages.title} imgUrl={pages.imgUrl || ''} setClick={() => setPagesCount(1)} />
 				: item[pagesCount] === undefined ?
 					<div className={styles.finish}>
 						<img src={`http://localhost:5173/${imgFinish}`} alt="" />
@@ -73,7 +72,7 @@ const Item: React.FC = () => {
 							className={styles.progressBar}></div>
 						<h2>{pages.title}</h2>
 						<ul>
-							{pages.variants.map((item, i) => (
+							{pages.variants?.map((item, i) => (
 								<li onClick={() => onClick(i)} key={i}>{item}</li>
 							))}
 						</ul>

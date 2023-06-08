@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 	const [value, setValue] = React.useState<string>('')
 	const onChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
 		setValue(e.target.value)
-		setSearch(e.target.value)
+		setSearch ? setSearch(e.target.value) : ''
 	}
 	return (
 		<div className={styles.wrapper}>

@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 interface IItem {
 	title: string;
-	imgUrl: string;
+	imgUrl?: string;
 	i: number;
 	setClick?:(num: number) => void
 }
@@ -18,7 +18,7 @@ const ItemStart: React.FC<IItem> = ({ title, imgUrl, i, setClick}) => {
 	}
 	return (
 		<div className={styles.wrapper}>
-			<img src={`http://localhost:5173/${imgUrl}`} alt="" />
+			<img src={`http://localhost:5173/${imgUrl || ''}`} alt="" />
 			<p>{title}</p>
 			{pathname === `/quiz/${id}` ?
 				<>

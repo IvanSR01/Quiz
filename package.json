@@ -1,11 +1,11 @@
 {
   "name": "quiz",
   "private": true,
-	"homepage": "https://zxcivan07.github.io/Quiz/",
+  "homepage": "https://zxcivan07.github.io/Quiz/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-		"predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
