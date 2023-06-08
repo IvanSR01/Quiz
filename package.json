@@ -1,12 +1,12 @@
 {
   "name": "quiz",
-  "private": true,
+  "private": false,
   "homepage": "https://zxcivan07.github.io/Quiz/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b main -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
