@@ -2,7 +2,7 @@ export const data = [
 	[
 		{
 			title: 'На сколько хорошо знаешь C#?',
-			imgUrl: 'public/QuizImg/2.webp'
+			imgUrl: '/QuizImg/2.webp'
 		},
 		{
 			title: 'Что такое Куча?',
@@ -60,7 +60,7 @@ export const data = [
 	[
 		{
 			title: 'Вопросы по C++',
-			imgUrl: 'public/QuizImg/1.webp'
+			imgUrl: '/QuizImg/1.webp'
 		},
 		{
 			title:
@@ -115,7 +115,7 @@ export const data = [
 		{
 			title: 'Профи по Js?',
 			imgUrl:
-				'public/QuizImg/3.png'
+				'/QuizImg/3.png'
 		},
 		{
 			title: 'Какое ключевое слово позволяет создавать объекты общего вида?',
@@ -162,7 +162,7 @@ export const data = [
 	[
 		{
 			title: 'Quiz по React.js',
-			imgUrl: 'public/logo512.png'
+			imgUrl: '/logo512.png'
 		},
 		{
 			title: 'React - это ... ?',
@@ -247,8 +247,66 @@ export const data = [
 	],
 	[
 		{
+			title: 'На сколько хорошо знаешь C#?',
+			imgUrl: '/QuizImg/2.webp'
+		},
+		{
+			title: 'Что такое Куча?',
+			variants: [
+				'Область динамической памяти',
+				' Именованная область памяти',
+				'Куча переменных'
+			],
+			correct: 0
+		},
+		{
+			title: 'Какие циклы существуют в языке C#?',
+			variants: [
+				'for, while',
+				'for, while, do while, foreach',
+				'for, while, do while'
+			],
+			correct: 1
+		},
+		{
+			title: 'Что обозначает ключевое слово var?',
+			variants: [
+				'Устраивает «войну» между программами',
+				'Обозначает что переменная имеет явный тип данных',
+				'Обозначает что переменная без явного типа данных'
+			],
+			correct: 2
+		},
+		{
+			title: 'Какие типы переменных существуют?',
+			variants: [
+				' int, char, bool, float, double',
+				'int, char, bool, string',
+				'Оба варианта верны',
+				'Нет верного ответа'
+			],
+			correct: 2
+		},
+		{
+			title: 'Что такое константа?',
+			variants: [
+				' Глобальная переменная',
+				'Переменная которая может быть изменена в любое время',
+				' Переменная значение которой нельзя изменить',
+				'Нет верного ответа'
+			],
+			correct: 2
+		},
+		{
+			title: 'Что такое константа?',
+			variants: [' end', 'out', ' return '],
+			correct: 2
+		}
+	],
+	[
+		{
 			title: 'Вопросы по C++',
-			imgUrl: 'public/QuizImg/1.webp'
+			imgUrl: '/QuizImg/1.webp'
 		},
 		{
 			title:
@@ -303,7 +361,7 @@ export const data = [
 		{
 			title: 'Профи по Js?',
 			imgUrl:
-				'public/QuizImg/3.png'
+				'/QuizImg/3.png'
 		},
 		{
 			title: 'Какое ключевое слово позволяет создавать объекты общего вида?',
@@ -350,7 +408,7 @@ export const data = [
 	[
 		{
 			title: 'Quiz по React.js',
-			imgUrl: 'public/logo512.png'
+			imgUrl: '/QuizImg/4.png'
 		},
 		{
 			title: 'React - это ... ?',
@@ -373,6 +431,63 @@ export const data = [
 				'Это функция',
 				'Это тот же HTML, но с возможностью выполнять JS-код'
 			],
+			correct: 2
+		}
+	],[
+		{
+			title: 'На сколько хорошо знаешь C#?',
+			imgUrl: 'public/QuizImg/2.webp'
+		},
+		{
+			title: 'Что такое Куча?',
+			variants: [
+				'Область динамической памяти',
+				' Именованная область памяти',
+				'Куча переменных'
+			],
+			correct: 0
+		},
+		{
+			title: 'Какие циклы существуют в языке C#?',
+			variants: [
+				'for, while',
+				'for, while, do while, foreach',
+				'for, while, do while'
+			],
+			correct: 1
+		},
+		{
+			title: 'Что обозначает ключевое слово var?',
+			variants: [
+				'Устраивает «войну» между программами',
+				'Обозначает что переменная имеет явный тип данных',
+				'Обозначает что переменная без явного типа данных'
+			],
+			correct: 2
+		},
+		{
+			title: 'Какие типы переменных существуют?',
+			variants: [
+				' int, char, bool, float, double',
+				'int, char, bool, string',
+				'Оба варианта верны',
+				'Нет верного ответа'
+			],
+			correct: 3
+		},
+		{
+			title: 'Что такое константа?',
+			variants: [
+				' Глобальная переменная',
+				'Переменная которая может быть изменена в любое время',
+				' Переменная значение которой нельзя изменить',
+				'Нет верного ответа'
+			],
+			correct: 2
+		},
+		{
+			title: 'Что такое константа?',
+			variants: [' end', 'out', ' return '],
 			correct: 2
 		}
 	],

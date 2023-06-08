@@ -4,9 +4,6 @@ import Router from './Router/Router'
 import React from 'react'
 
 const App: React.FC = () => {
-	React.useEffect(() => {
-		alert('Ответы на вопросы могут не совподать.(Дату заполнял спустя рукова)')
-	}, [])
 	return (
 		<div>
 			<Header/>

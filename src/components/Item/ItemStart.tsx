@@ -18,7 +18,7 @@ const ItemStart: React.FC<IItem> = ({ title, imgUrl, i, setClick}) => {
 	}
 	return (
 		<div className={styles.wrapper}>
-			<img src={`http://localhost:5173/${imgUrl || ''}`} alt="" />
+			<img src={`https://zxcivan07.github.io/Quiz/${imgUrl || ''}`} alt="" />
 			<p>{title}</p>
 			{pathname === `/quiz/${id}` ?
 				<>

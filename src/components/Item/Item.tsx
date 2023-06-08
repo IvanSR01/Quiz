@@ -54,7 +54,7 @@ const Item: React.FC = () => {
 				<ItemStart i={i} title={pages.title} imgUrl={pages.imgUrl || ''} setClick={() => setPagesCount(1)} />
 				: item[pagesCount] === undefined ?
 					<div className={styles.finish}>
-						<img src={`http://localhost:5173/${imgFinish}`} alt="" />
+						<img src={`${imgFinish}`} alt="" />
 						<p>Правильных ответо {correctCount} из {item.length - 1}</p>
 						<div className={styles.buttons}>
 							<Link to='/'>
