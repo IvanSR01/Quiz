@@ -6,13 +6,13 @@
   "type": "module",
   "scripts": {
     "deploy": "gh-pages -d dist",
-		"predeploy": "npm run build",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^10.12.16",
     "lodash.debounce": "^4.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
